@@ -7,7 +7,7 @@ import usersRoutes from "./routes/users.routes";
 const app = express();
 
 // Setings
-app.set("port", 4000); //4000
+app.set("port", process.env.PORT || 3000); //4000
 
 // Middlewars
 app.use(morgan("dev"));
